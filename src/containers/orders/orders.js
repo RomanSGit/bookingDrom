@@ -16,7 +16,7 @@ const Orders = ({ orders, removeTask }) => (
         <th>Имя</th>
       </tr>
       {orders.map(({ id, city, date, phone, name }) => (
-        <tr className={style.item}>
+        <tr className={style.item} key={id}>
           <td>{city}</td>
           <td>{date}</td>
           <td>{phone}</td>
