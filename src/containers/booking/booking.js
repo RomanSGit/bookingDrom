@@ -156,7 +156,6 @@ class Booking extends Component {
 
   cleanForm = () => {
     this.setState({
-      dates: [],
       hours: [],
       date: 'Дата',
       time: 'Время',
