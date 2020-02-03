@@ -11,7 +11,7 @@ const Select = ({ className, defaultValue, name, onChange, onBlur, data, value, 
       onChange={onChange}
       onBlur={onBlur}
       value={value}
-      disabled={!(data.length > 0) || disabled}>
+      disabled={data.length === 0 || disabled}>
         {defaultValue && <option hidden={true} disabled={true}>{defaultValue}</option>}
         {data.map(({ text, value }) =>
           <option
